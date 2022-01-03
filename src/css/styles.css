@@ -21,4 +21,19 @@ body {
 
 li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.first_string {
+  display: flex;
+  align-items: center;
+}
+.first_string > img {
+  margin-right: 10px;
+}
+.list-item > img {
+  margin-right: 10px;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 10px;
 }
