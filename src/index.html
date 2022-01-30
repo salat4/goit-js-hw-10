@@ -7,11 +7,36 @@
     <title>Homework 10</title>
   </head>
   <body>
-      <p>Введите названия странны</p>
-    <input type="text" id="search-box" />
-    <ul class="country-list"></ul>
-    <div class="country-info"></div>
+    <div class="modal">
+      <form class="form">
+              <label>
+                <p>Email</p>
+                <input type="email" class = "input1">
+                </input>
+              </label>
+              <label>
+                <p>Password</p>
+                <input class="input2" type="password">
+                </input>
+              </label>
+              <button class = "submit"submit>Submit</button>
 
+            </form>
+
+
+    </div>
+    <div class="invis">
+      <section class="section__left">
+          <p>Введите названия странны</p>
+        <input type="text" id="search-box">
+        <button id = "favourite" class = "favourite">Add favourite country</button>
+        <ul class="country-list"></ul>
+        <div class="country-info"></div>
+      </section>
+      <div class="your__favourite">Favourite country
+        <ul class="your__favourite-list"></ul>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

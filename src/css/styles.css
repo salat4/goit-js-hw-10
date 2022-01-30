@@ -10,6 +10,8 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
 }
 
 #search-box {
@@ -33,7 +35,59 @@ li {
 }
 .list-item > img {
   margin-right: 10px;
+  margin-left: 20px;
 }
+.list-item {
+  height: 30px;
+}
+
 .list-item:not(:last-child) {
   margin-bottom: 10px;
+}
+.favourite {
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  margin-bottom: 16px;
+  margin-left: 50px;
+}
+.your__favourite {
+  width: 30%;
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
+  align-items: center;
+  /* align-items: ; */
+  /* position: fixed; */
+  /* top: -90%; */
+  /* left: ?>50%; */
+}
+.button__delete {
+  margin-left: auto;
+  margin-right: -10px;
+}
+.your__favourite-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.invis {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 581px;
+  background: #fafafa;
+  transform: translate(-50%, -50%);
+  animation-name: changeModalBtn;
+  animation-duration: 2000ms;
+  z-index: 3;
 }
